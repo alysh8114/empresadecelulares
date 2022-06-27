@@ -1,0 +1,80 @@
+body{
+    background-color: #000;
+}
+/*PASO 1 
+Quitar estilos de viñetas*/
+ul{
+    list-style-type: none;
+}
+/*PASO 2
+Quitar margin y padding*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*PASO 3
+Aplicar formato al menu principal*/
+nav li a{
+    text-decoration: none;
+    color: #000;
+    background-color: #e8e1f3;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 10px;
+}
+
+/*PASO 4
+Acomodaremos el menu principal de forma vertical*/
+.menuprincipal{
+    float: left;
+}
+
+/*PASO 5
+
+
+
+Aplicar formato a la barra de menu*/
+nav{
+    width: 490px;
+    height: 60px;
+    margin: auto;
+    text-decoration: none;
+
+}
+
+/*PASO 6
+Aplicar efecto usando hover*/
+nav li a:hover{
+    background-color: #b7b7b7;
+}
+
+/*PASO 7
+Ocultar el submenu nivel 2y ajustar la posicion (absoluta) y (modificaremos el ancho minimo)*/
+nav li ul{
+    position: absolute;
+    min-width: 140px;
+    display: none; /*ocultar*/
+    text-decoration: none;
+
+}
+/*PASO 8
+Mostar el submenu nivel 2 usando hover*/
+nav li:hover > ul{
+    display: block;
+    text-decoration: none;
+
+}
+
+
+fieldset{
+    background-color: #000;
+    color: #ffffff;
+    width: 300px;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Agency FB;
+    text-decoration: none;
+
+}
